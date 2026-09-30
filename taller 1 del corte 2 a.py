@@ -62,9 +62,9 @@ nom, e, prog, sem, prom = estudiante
 print(f"""
 FICHA DEL ESTUDIANTE
 Nombre: {nom}
-Edad: {e}
+Edad: {e}, años
 Programa: {prog}
 Semestre: {sem}
 Promedio: {prom}
-""".format(*estudiante))
+""")
 #Ejercicio 7
