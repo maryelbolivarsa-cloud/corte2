@@ -18,9 +18,24 @@ print("Resultado de la suma:", suma_n(numero))
 
 #Ejercicio 11
 def factorial(n):
-    print("Entando con n=", n)
+    print("Entrando con n=", n)
     if n == 1:
         return 1
     return n * factorial(n-1)
+print("el factorial es",)
+#Ejercicio 12
+def potencia(base, exponente):
+    if exponente == 0:
+        return 1
+    return base * potencia(base, exponente -1)
 
-        
+b = float(input("Digite la base: "))
+e = int(input("Digite el exponente: "))
+resultado = potencia(b, e)
+print("El resultado es: ", resultado)
+#Ejercicio 13
+def contar_digitos(n):
+    return len(str(n))
+codigo = int(input("Digite un código,ejemplo(53829): "))
+cantidad = contar_digitos(codigo)
+print("El número de dígitos es:", cantidad)
