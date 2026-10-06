@@ -34,8 +34,28 @@ e = int(input("Digite el exponente: "))
 resultado = potencia(b, e)
 print("El resultado es: ", resultado)
 #Ejercicio 13
-def contar_digitos(n):
+def contar(n):
     return len(str(n))
 codigo = int(input("Digite un código,ejemplo(53829): "))
-cantidad = contar_digitos(codigo)
+cantidad = contar(codigo)
 print("El número de dígitos es:", cantidad)
+#Ejercico 14
+def suma_digitos(n):
+    if n < 10:
+        return n
+    return (n % 10) + suma_digitos(n // 10)
+numero = int(input("Ingrese un número entero positivo: "))
+if numero < 0:
+    print("Por favor, ingrese un número entero positivo.")
+else:
+    resultado = suma_digitos(numero)
+    print(f"La suma de los dígitos de {numero} es: {resultado}")
+    #Ejercicio 15
+    def inver_cadena(cadena):
+        if len(cadena) <= 1:
+            return cadena
+        return cadena[-1] + inver_cadena(cadena[:-1])
+    text = input("Ingrese una palabra: ")
+    resultado2 = inver_cadena(text)
+    print(f"Resultado: ", resultado2)
+    
